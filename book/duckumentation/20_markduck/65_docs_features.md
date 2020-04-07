@@ -431,11 +431,13 @@ to link to only the name, only the number or both ([](#tab:link-examples)).
 <col1 figure-id="tab:link-examples" figure-caption="Syntax for referring to sections.">
     <pre class="markdown"><code class="markdown">See [](#establishing).</code></pre>
     <s>See <a href="#establishing"></a></s>
-    <pre class="markdown"><code class="markdown">See &lt;a class="only_name" href="#establishing"&gt;&lt;/a&gt;.</code></pre>
+    <pre class="html"><code class="html">See &lt;a class="only_name" href="#establishing"&gt;&lt;/a&gt;.</code
+    ></pre>
     <s>See <a class="only_name" href="#establishing"></a>.</s>
-    <pre class="markdown"><code class="markdown">See &lt;a class="only_number" href="#establishing"&gt;&lt;/a&gt;.</code></pre>
+    <pre class="html"><code class="html">See &lt;a class="only_number" href="#establishing"&gt;&lt;/a&gt;.</code
+    ></pre>
     <s>See <a class="only_number" href="#establishing"></a>.</s>
-    <pre><code>See &lt;a class="number_name" href="#establishing"&gt;&lt;/a&gt;.</code></pre>
+    <pre class="html"><code class="html">See &lt;a class="number_name" href="#establishing"&gt;&lt;/a&gt;.</code></pre>
     <s>See <a class="number_name" href="#establishing"></a>.</s>
 </col1>
 
