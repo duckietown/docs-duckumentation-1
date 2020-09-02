@@ -15,6 +15,22 @@ See: [A tutorial on Markdown][tutorial].
 [tutorial]: https://www.markdowntutorial.com/
 
 
+## Comments
+
+You can insert comments using the HTML syntax for comments:
+any text between "<code>&lt;!--</code>" and "<code>--&gt;</code>" is ignored.
+
+<pre trim="1" class="markdown">
+<code trim="1" class="markdown">
+# My section
+
+&lt;!-- this text is ignored --&gt;
+
+Let's start by...
+</code>
+</pre>
+
+
 
 ## Variables in command lines and command output
 
@@ -271,7 +287,7 @@ To make them flow horizontally, add `figure-class="flow-subfigures"` to the exte
 </div>
 -->
 
-## Shortcut for tables
+## Shortcut for tables {#tables-shortcut}
 
 The shortcuts `col2`, `col3`, `col4`, `col5`
 are expanded in tables with 2, 3, 4 or 5 columns.
@@ -368,8 +384,10 @@ For example, for this subsection, we have used:
 
 With this, we have given this header the ID "`establishing`".
 
+By convention, we use consistently dashes rather than underscores.
+For example, instead of using the ID `#my_cool_section`, use `#my-cool-section`.
 
-### How to name IDs - and why it's not automated
+### How to name IDs - and why it's not automated {#naming-IDs}
 
 Some time ago, if there was a section called
 
@@ -415,7 +433,7 @@ Better:
 Also note that you don't *need* to add IDs to everything, only the things that people could link to. (e.g. not subsubsections)
 
 
-### Linking from the documentation to the documentation
+### Linking from the documentation to the documentation {#linking}
 
 You can use the syntax:
 
@@ -480,17 +498,49 @@ When the user clicks on the link, they will be redirected to the topic called "s
 
 -->
 
-## Comments
+## Linking to other books {#linking-to-other-books}
 
-You can insert comments using the HTML syntax for comments:
-any text between "<code>&lt;!--</code>" and "<code>--&gt;</code>" is ignored.
+It is possible to link from one book to another.
 
-<pre trim="1" class="markdown">
-<code trim="1" class="markdown">
-# My section
+The syntax is a slightly extended syntax. Instead of using something like 
 
-&lt;!-- this text is ignored --&gt;
+    See this [interesting section](#interesting-section).
+    
+You need to use add `+other-book-id` before the `#`:
 
-Let's start by...
-</code>
-</pre>
+    See this [interesting section in another book](+other-book-id#interesting-section).
+    
+   
+To find out what is the book ID, go to the current index of all the books,
+which, for `daffy`, is `https://docs.duckietown.org/daffy/`. Go to 
+the book you want to link, and note the URL. The book ID is the part after `daffy`.
+
+For example, this book is published at 
+
+    https://docs.duckietown.org/daffy/duckumentation/out/index.html
+
+The book ID is `duckumentation`.
+
+To link to the entire book, use something like `+BOOKID#book`. (By convention,
+each book will have the main header assigned the header `#book:book`.)
+
+
+Here is a list of all the books as of August 2020:
+
+- [](+opmanual_developer#book)
+- [](+opmanual_duckiebot#book)
+- [](+opmanual_duckietown#book)
+- [](+opmanual_autolab#book)
+- [](+duckumentation#book) - this book.
+- [](+duckiesky_high_school_student#book)
+- [](+duckiesky_high_school#book)
+- [](+duckietown-robotics-development#book)
+- [](+duckietown-classical-robotics#book)
+- [](+duckietown-learning-robotics#book)
+ 
+ 
+### (For developers) How to update the list of books that can be crossreferenced. 
+
+The dictionary between book ID and URL is maintained in the repo `docs-build` in the 
+file `books.crossref.yaml`. When a new book is added, the list needs to be updated
+and the image `duckietown/docs-build` be updated.

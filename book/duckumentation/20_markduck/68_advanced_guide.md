@@ -3,8 +3,13 @@
 
 It is possible to embed Vimeo videos in the documentation.
 
+
 Note: Do not upload the videos to your personal Vimeo account; they must all be
 posted to the Duckietown Engineering account.
+
+Note: The videos must be *public* for the embedding to work. If the video is
+not public the process will fail mentioning the video is not found (true, because
+it is not public).
 
 This is the syntax:
 
@@ -35,7 +40,7 @@ produces this result:
 
 Depending on the output media, the result will change:
 
-* On the online book, the result is that a player is embedded.
+* On the online book, the result is that a video player is embedded.
 * On the e-book version, the result is that a thumbnail is produced, with a link to the video;
 * (future improvement) On the dead-tree version, a thumbnail is produced with a QR code linking to the video.
 
