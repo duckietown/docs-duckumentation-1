@@ -525,15 +525,15 @@ To link to the entire book, use something like `+BOOKID#book`. (By convention,
 each book will have the main header assigned the header `#book:book`.)
 
 
-Here is a list of som of the books as of August 2020:
+Here is a list of some of the books as of August 2020:
 
-- [](+opmanual_developer#book)
-- [](+opmanual_duckiebot#book)
-- [](+opmanual_duckietown#book)
-- [](+opmanual_autolab#book)
-- [](+duckumentation#book) - this book.
-- [](+duckiesky_high_school_student#book)
-- [](+duckiesky_high_school#book) 
+- `opmanual_developer`: [](+opmanual_developer#book) 
+- `opmanual_duckiebot`: [](+opmanual_duckiebot#book)
+- `opmanual_duckietown`: [](+opmanual_duckietown#book)
+- `opmanual_autolab`: [](+opmanual_autolab#book)
+- `duckumentation`: [](+duckumentation#book) - this book.
+- `duckiesky_high_school_student`: [](+duckiesky_high_school_student#book)
+- `duckiesky_high_school`: [](+duckiesky_high_school#book) 
  
 ### (For developers) How to update the list of books that can be crossreferenced. 
 
