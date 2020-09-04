@@ -205,6 +205,12 @@ Will result in:
 
 > Please see [](#bib:siciliano07handbook).
 
+
+Somewhere in the document, add the following:
+
+    &lt;div id="put-bibliography-here"&gt;&lt;/div&gt;
+
+
 ## Embedding Latex in Figures through SVG {#svg-figures}
 
 <div class='requirements' markdown="1">
