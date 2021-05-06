@@ -38,7 +38,11 @@ This will create a new repo on your account that is linked to the original one.
  <img src="fork-duckuments.png" style='width: 80%'/>
 </figure>
 
+<!--
+
 TODO: re-make image
+
+-->
 
 ### Checkout your fork locally
 
