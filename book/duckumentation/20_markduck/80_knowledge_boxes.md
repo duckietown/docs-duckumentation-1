@@ -123,7 +123,7 @@ Better: **If you want**, you can use the instructions [here](#instructions-refer
 \*\* This *might* change in the future.
 
 
-## 'How to speak the language of the graph' {#instructions-refer-to-data}  
+## 'How to speak the language of the graph' {#instructions-refer-to-data status=draft}  
 
 To refer to an entity that is already known by the knowledge-box parsing algorithm:    
 
@@ -154,7 +154,3 @@ To refer to an entity that is already known by the knowledge-box parsing algorit
 - The data entries in "topics" (knowledge) and "items" (mostly physical objects or software) are what is matched to requirements and results in knowledge boxes. If you use the exact name of an entity listed there (the "name" field), plus the exact wording of any `item options` that you want to refer to, it is certain to be recognized by the system as that entity.  
 - To visualize the graph, [see here](https://github.com/duckietown/education-on-demand/blob/master/docs/generate_visualize_graph.md) (and [here](https://github.com/duckietown/education-on-demand#visualizing-gexf-graphs)).
 
-
-## Suggestion for an alternative knowledge box format
-
-See [here](https://github.com/duckietown/education-on-demand/docs/alternative_kb_format.md)  

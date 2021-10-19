@@ -228,7 +228,7 @@ List of requirements at the beginning of setup chapter.
 
 </div>
 
-## Notes and questions {#notes-and-questions}
+## Notes and questions {#notes-and-questions status=beta}
 
 There are three environments: "comment", "question", "doubt",
 that result in boxes that can be expanded by the user.
